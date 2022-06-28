@@ -1,13 +1,9 @@
-var x = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60,65];
-x.shift();
-x.unshift("i am unshift");
-x.pop();
-x.push("i am push");
-x[4] = "i am waltanet";
-delete x[2];
-var newArray = x.slice(5, 10);
-
-console.log(x);
-
-newArray.splice(1, 3)
-console.log(newArray);
+var first_div = document.querySelector(".first_div");
+console.log(first_div.previousSibling.previousSibling);
+console.log(first_div.nextSibling.nextSibling);
+console.log(first_div.nextElementSibling);
+console.log(first_div.lastElementChild);
+console.log(first_div.firstElementChild);
+console.log(first_div.childElementCount);
+console.log(first_div.childNodes);
+console.log(first_div.previousElementSibling.previousElementSibling.previousElementSibling);
