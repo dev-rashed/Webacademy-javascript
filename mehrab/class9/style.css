@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section{
+    height:100vh;
+    width: 60%;
+    margin: 20px 30px;
+    padding: 20px 30px;
+    background-color: rgba(13, 102, 102, 0.473);
+    border: 5px solid green;
+    text-align: center;
+}
+.list_input{
+    height: 30px;
+    width: 30%;
+    padding: 5px;
+    border-radius: 10px;
+    color: rgba(32, 23, 39, 0.973);
+    font-size: 18px;
+   
+}
+.add_btn{
+    height: 35px;
+    width: 30%;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    background-color: rgba(122, 75, 196, 0.938);
+}
+#parent_div ul{
+    font-size: 20px;
+    font-weight: 7000;
+    color: rgb(16, 34, 28);
+    line-height: 50px
+}
+#parent_div ul .remove_list{
+    color: red;
+    padding: 5px;
+    margin: 5px;
+    background-color: antiquewhite;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+}
