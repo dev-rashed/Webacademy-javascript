@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operation</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+</head>
+<body>
+  <!-- form -->
+    <div class="container" style="background-color: rgb(122, 146, 122); border: 3px solid black;">
+        <div class="row">
+            <div class="column column-75 column-offset-10">
+                <div class="row">
+                    <div class="column text-center">
+                        <h2 style="text-align:center; margin-top: 30px; color: rgb(57, 32, 199);">CRUD (Add User)</h2>
+                    </div>
+                </div>
+                <form>
+                    <fieldset>
+                      <label for="fullname">Name</label>
+                      <input type="text" placeholder="Enter Your FullName" id="fullname">
+
+                      <div class="row">
+                        <div class="column column-50">
+                          <label for="email">Email</label>
+                            <input type="text" placeholder="Enter Your Email" id="email">
+                        </div>
+                        <div class="column column-50">
+                          <label for="phone">Phone</label>
+                          <input type="number" placeholder="Enter Your Phone" id="phone">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="column" style="text-align: center;">
+                        <input style="width: 40%; height: 40px; font-size: 20px;" id="user_btn" class="button-primary" type="submit" value="Submit">
+
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
+            </div>
+        </div>
+    </div>
+    <!-- form end -->
+    <!-- Table  -->
+    <div class="container" style="background-color: rgb(212, 198, 208); border: 3px solid black; margin-top: 30px;">
+      <div class="row">
+        <div class="column text-center">
+            <h2 style="text-align:center; margin-top: 30px;">CRUD (User List)</h2>
+        </div>
+    </div>
+      <div class="row">
+        <div class="column column-75 column-offset-10">
+
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="user_table">
+              <!-- <tr>
+                <td>1</td>
+                <td>Mehrab</td>
+                <td>mehrab@gmail.com</td>
+                <td>0134566</td>
+                <td>
+                  <a href="#" class="button-primary">Edit</a>
+                  <span>|</span>
+                  <a href="#" class="button-primary">Delete</a>
+                </td>
+              </tr> -->
+              
+            </tbody>
+          </table>
+
+        </div>
+      </div>
+    </div>
+    <!-- Table end -->
+    <script src="./app.js"></script>
+</body>
+</html>

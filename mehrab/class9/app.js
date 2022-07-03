@@ -23,7 +23,7 @@ add_btn.addEventListener('click', function (){
 });
 our_ul.addEventListener('click', function (e){
     // console.log(e.target);
-    // if(e.target.classList.contains('remove_list'));
+    if(e.target.classList.contains('remove_list'));
     e.target.parentElement.remove();
     console.log("Remove a class")
 });
