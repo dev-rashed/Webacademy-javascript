@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+    <style>
+        .heading {
+            margin-top: 30px;
+        }
+        .center {
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <!-- Form start -->
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <h1 class="center heading">CRUD (Add user)</h1>
+            </div>
+        </div>
+       <div class="row">
+            <div class="column column-75 column-offset-10">
+                <form>
+                    <fieldset>
+                        <label for="fullname">Name</label>
+                        <input type="text" placeholder="Full Name" id="fullname">
+
+                        <div class="row">
+                            <div class="column column-50">
+                                <label for="email">Email</label>
+                                <input type="email" placeholder="Email" id="email">
+                            </div>
+                            <div class="column column-50">
+                                <label for="phone">Phone</label>
+                                <input type="text" placeholder="Phone" id="phone">
+                            </div>
+                        </div>
+
+                        <input class="button-primary" id="submit_user" type="submit" value="Submit">
+                    </fieldset>
+                  </form>
+            </div>
+       </div>
+    </div>
+    <!-- Form end -->
+
+    <hr>
+
+    <!-- Table start-->
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <h1 class="center heading">CRUD (User list)</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column column-75 column-offset-10">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="user_table_body">
+                       
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Table end -->
+
+    <script src="main.js"></script>
+</body>
+</html>
