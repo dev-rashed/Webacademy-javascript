@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuruzzaman</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+    <style>
+        #bg {
+             background-image: url(img/img.jpg);
+             color: rgb(43, 9, 236);
+             background-size: 1121px 403px;
+
+        }
+        #bg1 {
+            background-image: url(img/img\ 1.jpg);
+             height: auto;
+             width: 100%;
+        }
+
+        
+        .heading {
+            margin-top: 30px;
+        }
+        .center {
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <!-- Form  -->
+    <div id="bg" class="container">
+        <div class="row">
+            <div class="column">
+                <h1 class="center heading">Inpute User</h1>
+            </div>
+        </div>
+       <div class="row">
+            <div class="column column-75 column-offset-10">
+                <form>
+                    <fieldset>
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" placeholder="Enter Your Full Name">
+
+                        <div class="row">
+                            <div class="column column-50">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" placeholder="Enter Your Email">
+                            </div>
+                            <div class="column column-50">
+                                <label for="phone">Phone:</label>
+                                <input type="number" id="phone" placeholder="Enter Your Phone Number">
+                            </div>
+                        </div>
+
+                        <input class="button-primary" id="submit_user" type="submit" value="Submit">
+                    </fieldset>
+                  </form>
+            </div>
+       </div>
+    </div>
+    <!-- Form end -->
+
+    <hr>
+
+    <!-- Table -->
+    <div id="bg1" class="container">
+        <div class="row">
+            <div class="column">
+                <h1 class="center heading"> User list </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column column-75 column-offset-10">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="user_table_body">
+                       
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Table end -->
+
+    <script src="apps.js"></script>
+</body>
+</html>
